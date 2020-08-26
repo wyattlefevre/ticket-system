@@ -109,6 +109,7 @@ export default {
         this.getTickets();
         return true;
       } catch (error) {
+        return false;
       }
     },
     async logout() {
@@ -125,6 +126,7 @@ export default {
         this.tickets = response.data.tickets;
         return true;
       } catch (error) {
+        return false;
       }
     },
   },
