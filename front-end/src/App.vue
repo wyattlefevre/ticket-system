@@ -7,12 +7,12 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-hover v-slot:default="{ hover }" close-delay="200">
-        <v-btn icon href="https://github.com/wyattlefevre/photo-share">
+        <v-btn icon href="https://github.com/wyattlefevre/ticket-system">
           <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-github</v-icon>
         </v-btn>
       </v-hover>
       <v-hover v-slot:default="{ hover }" close-delay="200">
-        <v-btn icon href="http://wyattlefevre.com/">
+        <v-btn icon href="https://wyattlefevre.com/">
           <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-home</v-icon>
         </v-btn>
       </v-hover>
@@ -24,7 +24,7 @@
       <v-col class="text-center">
         <div class="font-weight-bold text-h5">Wyatt LeFevre</div>
         <v-hover v-slot:default="{ hover }" close-delay="200">
-          <v-btn icon href="http://wyattlefevre.com/">
+          <v-btn icon href="https://wyattlefevre.com/">
             <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-home</v-icon>
           </v-btn>
         </v-hover>
