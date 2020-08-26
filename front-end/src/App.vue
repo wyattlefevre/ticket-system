@@ -2,13 +2,49 @@
   <v-app>
     <v-app-bar app color="primary" dark>
       <v-toolbar-title class="white--text text-uppercase">
-          <span class="font-weight-light">ticket</span>
-          <span class="font-weight-black">system</span>
-        </v-toolbar-title>
+        <span class="font-weight-light">ticket</span>
+        <span class="font-weight-black">system</span>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-hover v-slot:default="{ hover }" close-delay="200">
+        <v-btn icon href="https://github.com/wyattlefevre/photo-share">
+          <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-github</v-icon>
+        </v-btn>
+      </v-hover>
+      <v-hover v-slot:default="{ hover }" close-delay="200">
+        <v-btn icon href="http://wyattlefevre.com/">
+          <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-home</v-icon>
+        </v-btn>
+      </v-hover>
     </v-app-bar>
     <v-main>
       <router-view />
     </v-main>
+    <v-footer color="secondary" dark>
+      <v-col class="text-center">
+        <div class="font-weight-bold text-h5">Wyatt LeFevre</div>
+        <v-hover v-slot:default="{ hover }" close-delay="200">
+          <v-btn icon href="http://wyattlefevre.com/">
+            <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-home</v-icon>
+          </v-btn>
+        </v-hover>
+        <v-hover v-slot:default="{ hover }" close-delay="200">
+          <v-btn icon href="https://github.com/wyattlefevre/">
+            <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-github</v-icon>
+          </v-btn>
+        </v-hover>
+        <v-hover v-slot:default="{ hover }" close-delay="200">
+          <v-btn icon href="https://www.linkedin.com/in/wyatt-lefevre-a22b261a6/">
+            <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-linkedin</v-icon>
+          </v-btn>
+        </v-hover>
+        <v-hover v-slot:default="{ hover }" close-delay="200">
+          <v-btn icon href="mailto:wyattlefevre@gmail.com">
+            <v-icon size="2em" :color="hover ? 'accent' : 'white'">mdi-email</v-icon>
+          </v-btn>
+        </v-hover>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
